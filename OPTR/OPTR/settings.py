@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-34xnbq4p!$nx1cnl+-v+01!2%@9v!h$3^$(hj1r4awcxfku&o6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'LineBot',
 ]
 
 MIDDLEWARE = [
@@ -103,9 +104,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hant'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Taipei'
 
 USE_I18N = True
 
@@ -123,3 +124,6 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LINE_CHANNEL_ACCESS_TOKEN = 'o4pPo44PZkj7z8TCZbo3CDBTWPrSx8Ls+PJrovx7SBZMmpBp0hTInlK5Q8i4UPjAAbg24RRA6Am46GFAKJ42kGeNtcsPMKdVBFo1Bz/YJyNZwiEQn3vzgWhOq56TR7en6PeFVctJMKwKUOjLjndtdAdB04t89/1O/w1cDnyilFU='
+LINE_CHANNEL_SECRET = 'd1cee8bb03b7b550fd2eccdafb1e55c6'
