@@ -17,7 +17,9 @@ from django.contrib import admin
 from django.urls import path,re_path
 #from django.conf.urls import url # in django 4.0 the function is disappear
 from LineBot.views import *
+from .views import home
 urlpatterns = [
     re_path('^callback',callback),
+    path('',home),
     path('admin/', admin.site.urls),
 ]
